@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: AnimationWin
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-17.0,"y":57.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"7ef5f29a-263f-4540-9475-d23c800c1c1e","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-222.0,"y":14.0},"guid":"ec7ab188-a932-46e7-b498-344f09bb5626","$version":"A","$type":"Unity.VisualScripting.Update","$id":"11"},{"chainable":false,"member":{"name":"localScale","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"input":{"x":1.0,"y":1.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":104.0,"y":50.0},"guid":"7968909c-5863-4ab6-9636-f868158f344a","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"13"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"Goal","$type":"System.String"}},"position":{"x":-239.0,"y":126.0},"guid":"9bd6525f-d9a3-4932-b0d4-05d228fb7ff0","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"16"},{"defaultValues":{},"position":{"x":-42.0,"y":65.0},"guid":"b8db7ce7-7325-45ec-885e-3b5ab12d3b44","$version":"A","$type":"Unity.VisualScripting.If","$id":"18"},{"sourceUnit":{"$ref":"18"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"654066be-885f-4410-8591-de083b2a86ef","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"32b6cf95-7cbb-4980-8c8f-66d356a7632c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"condition","guid":"fc2f4251-8e2d-424a-907c-81f41a6aa174","$type":"Unity.VisualScripting.ValueConnection"},{"position":{"xMin":-280.0,"yMin":-23.0,"xMax":292.0,"yMax":239.0},"label":"Win
+      Animation","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"c9329506-97b6-414b-88c0-bf12b04adc3d","$version":"A","$type":"Unity.VisualScripting.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []
