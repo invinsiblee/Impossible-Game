@@ -154,6 +154,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &150534464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 450982243669634008, guid: 06bcc6d3dc8c22c4cb434406c7f7a9dc, type: 3}
+  m_PrefabInstance: {fileID: 3602853147296420635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &150534465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150534464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 4d84cef94c62aa341a5ad08604e6df3b, type: 2}
 --- !u!1 &413319043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2117040386848784614, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
@@ -169,7 +190,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -498,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Goal","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Death","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"GroundCheck","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Goal","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Death","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"GroundCheck","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerDeath","value":{"$content":0,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!4 &635443477
 Transform:
@@ -597,7 +618,7 @@ GameObject:
   - component: {fileID: 736880999}
   m_Layer: 3
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -943,7 +964,9 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.21960786
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4476156201256264159, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
+    - {fileID: -6231568281075934274, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
 --- !u!1 &1118129612 stripped
 GameObject:
@@ -975,7 +998,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1394,31 +1417,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1817639103 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 450982243669634008, guid: 06bcc6d3dc8c22c4cb434406c7f7a9dc, type: 3}
-  m_PrefabInstance: {fileID: 3602853147296420635}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1817639110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7748638028674560844, guid: 06bcc6d3dc8c22c4cb434406c7f7a9dc, type: 3}
   m_PrefabInstance: {fileID: 3602853147296420635}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1817639111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817639103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
-    _objectReferences: []
 --- !u!1 &1826367996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1538,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3602853147307750781, guid: 06bcc6d3dc8c22c4cb434406c7f7a9dc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7748638028674560844, guid: 06bcc6d3dc8c22c4cb434406c7f7a9dc, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1634,7 +1641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3790275154439049019, guid: 6255daf45ba7e0844b82bb61877eb574, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5595630910712663539, guid: 6255daf45ba7e0844b82bb61877eb574, type: 3}
       propertyPath: m_Name
@@ -1725,5 +1732,7 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.21960786
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4476156201256264159, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
+    - {fileID: -6231568281075934274, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb05b0e2a9f2de2438015d5ef904cca0, type: 3}
