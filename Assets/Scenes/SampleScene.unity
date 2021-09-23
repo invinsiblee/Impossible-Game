@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Goal","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Death","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"GroundCheck","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerDeath","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"Deaths","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"DeathCounter","value":null,"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Goal","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Death","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"GroundCheck","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerDeath","value":{"$content":0,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!4 &635443477
 Transform:
