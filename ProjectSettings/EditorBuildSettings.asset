@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Heart.unity
     guid: 0e719e5dee54abd48b32ba8755221243
   - enabled: 1
+    path: Assets/Scenes/AttackBrain.unity
+    guid: e98ed5b4bd7873d4d8ea6d8092af6b5e
+  - enabled: 1
+    path: Assets/Scenes/AttackHeart.unity
+    guid: bd7052052418cd4499b9e28ab618efde
+  - enabled: 1
+    path: Assets/Scenes/AttackLiver.unity
+    guid: 9e8bcc2e0adf2ea4eba475a330be738c
+  - enabled: 1
     path: Assets/Scenes/Brain.unity
     guid: a47cf8735881a214e9727552ea55eef0
   m_configObjects: {}

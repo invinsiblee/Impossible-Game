@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: StartGame
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":67.0,"y":26.09778},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"AttackLiver","$type":"System.String"}},"position":{"x":206.0,"y":-103.0},"guid":"2cc7b65d-08c1-4b42-bf2d-e34c62f33d42","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"9"},{"chainable":false,"member":{"name":"OnPointerClick","parameterTypes":["UnityEngine.EventSystems.PointerEventData"],"targetType":"UnityEngine.UI.Button","targetTypeName":"UnityEngine.UI.Button","$version":"A"},"defaultValues":{"target":null},"position":{"x":20.0,"y":-101.0},"guid":"0da110b3-9def-4df2-a6a7-c46d0051408f","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"12"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-203.0,"y":-79.0},"guid":"7ac0054f-db22-4012-b7e9-8192135a27b1","$version":"A","$type":"Unity.VisualScripting.OnPointerClick","$id":"15"},{"sourceUnit":{"$ref":"12"},"sourceKey":"exit","destinationUnit":{"$ref":"9"},"destinationKey":"enter","guid":"a916849f-3103-445b-a06b-53976e32da48","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"6972c57d-46f0-492d-b0e2-6774739aa95c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"data","destinationUnit":{"$ref":"12"},"destinationKey":"%eventData","guid":"01e94ae8-45eb-4447-9918-5b868c4c8b21","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
