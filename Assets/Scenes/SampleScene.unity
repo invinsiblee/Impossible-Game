@@ -2812,6 +2812,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3207737760813030398, guid: a886d7888bcd5dc449cf181927ae3099, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Timer","value":{"$content":1.7,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 6555490937318632565, guid: a886d7888bcd5dc449cf181927ae3099, type: 3}
       propertyPath: m_Name
       value: Respawn
